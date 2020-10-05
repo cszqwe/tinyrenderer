@@ -1,10 +1,10 @@
 SYSCONF_LINK = g++
-CPPFLAGS     =
-LDFLAGS      =
+CPPFLAGS     = 
+LDFLAGS      = -ggdb -g -pg -O0
 LIBS         = -lm
 
 DESTDIR = ./
-TARGET  = main
+TARGET  = a.out
 
 OBJECTS := $(patsubst %.cpp,%.o,$(wildcard *.cpp))
 
